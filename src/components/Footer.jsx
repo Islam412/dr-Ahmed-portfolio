@@ -28,9 +28,9 @@ const Footer = ({ language }) => {
               whileHover={{ scale: 1.1 }}
               className="flex items-center gap-2 text-gray-400"
             >
-              <span>© {currentYear}</span>
-              <span className="text-gradient-rainbow font-semibold">{doctorInfo.name}</span>
               <span>{t.rights}</span>
+              <span className="text-gradient-rainbow font-semibold">© {doctorInfo.name}</span>
+              <span>{currentYear}</span>
             </motion.div>
 
             {/* Heart Line - Designed by Developer (مترجم حسب اللغة) */}
