@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaTooth, FaUserMd, FaStethoscope, FaHome, FaServicestack, FaImage, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTooth, FaUserMd, FaHome, FaServicestack, FaImage, FaEnvelope } from 'react-icons/fa';
 import LanguageSwitcher from './LanguageSwitcher';
 import { content } from '../data/content';
 
@@ -9,6 +9,7 @@ const Navbar = ({ language, setLanguage }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const t = content[language].nav;
+  const doctorInfo = content[language].doctor;
   const isRTL = language === 'ar';
 
   useEffect(() => {
@@ -69,8 +70,9 @@ const Navbar = ({ language, setLanguage }) => {
                 <FaTooth className="text-white text-xl" />
               </div>
               <div className="hidden sm:block">
-                <span className="text-cyan-400 font-bold text-xl">Dr.</span>
-                <span className="text-white font-bold text-xl"> Ahmed Mosa</span>
+                <span className="text-gradient-rainbow font-bold text-xl">
+                  {doctorInfo.name}
+                </span>
               </div>
             </div>
           </motion.a>

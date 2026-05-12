@@ -1,5 +1,13 @@
 export const content = {
   ar: {
+    doctor: {
+      name: 'د. أحمد موسى',
+      title: 'استشاري طب وتجميل الأسنان'
+    },
+    developer: {
+      name: 'إسلام حمدي',
+      role: 'مطور واجهات أمامية'
+    },
     nav: {
       home: 'الرئيسية',
       services: 'الخدمات',
@@ -57,6 +65,16 @@ export const content = {
     }
   },
   en: {
+    // Doctor Info
+    doctor: {
+      name: 'Dr. Ahmed Mosa',
+      title: 'Consultant of Dental Medicine & Cosmetics'
+    },
+    // Developer Info
+    developer: {
+      name: 'Islam Hamdy',
+      role: 'Frontend Developer'
+    },
     nav: {
       home: 'Home',
       services: 'Services',
@@ -115,22 +133,18 @@ export const content = {
   }
 };
 
-// Specializations data (based on your provided list)
 export const specializations = [
   { icon: 'FaTooth', nameAr: 'طب الأسنان العام', nameEn: 'General Dentistry', descAr: 'الكشف، الحشو، تنظيف الأسنان، خلع الأسنان البسيط', descEn: 'Examination, filling, cleaning, simple extraction' },
   { icon: 'FaTeeth', nameAr: 'تقويم الأسنان', nameEn: 'Orthodontics', descAr: 'تعديل اعوجاج الأسنان والفكين', descEn: 'Teeth and jaw alignment' },
-  { icon: 'FaScalpel', nameAr: 'جراحة الفم والأسنان', nameEn: 'Oral Surgery', descAr: 'خلع ضروس العقل، زراعة الأسنان، جراحات الفك', descEn: 'Wisdom teeth extraction, implants, jaw surgeries' },
   { icon: 'FaMicroscope', nameAr: 'علاج الجذور', nameEn: 'Root Canal', descAr: 'علاج التهاب عصب الأسنان', descEn: 'Treatment of tooth nerve inflammation' },
   { icon: 'FaCrown', nameAr: 'تركيبات الأسنان', nameEn: 'Dental Prosthetics', descAr: 'التيجان والكباري وأطقم الأسنان', descEn: 'Crowns, bridges, dentures' },
-  { icon: 'FaImplant', nameAr: 'زراعة الأسنان', nameEn: 'Dental Implants', descAr: 'تعويض الأسنان المفقودة بزرعات ثابتة', descEn: 'Replacement of missing teeth with fixed implants' },
   { icon: 'FaSmile', nameAr: 'تجميل الأسنان', nameEn: 'Cosmetic Dentistry', descAr: 'تبييض، فينير، ابتسامة هوليود', descEn: 'Whitening, veneers, Hollywood smile' },
   { icon: 'FaChild', nameAr: 'طب أسنان الأطفال', nameEn: 'Pediatric Dentistry', descAr: 'علاج ومتابعة أسنان الأطفال', descEn: 'Children\'s dental treatment and follow-up' },
-  { icon: 'FaGum', nameAr: 'أمراض اللثة', nameEn: 'Gum Diseases', descAr: 'علاج التهاب اللثة وجراحاتها', descEn: 'Gum inflammation treatment and surgeries' },
-  { icon: 'FaXray', nameAr: 'أشعة الفم والأسنان', nameEn: 'Dental Radiology', descAr: 'تصوير وتحليل الأشعة', descEn: 'Imaging and radiology analysis' },
-  { icon: 'FaDiagnosis', nameAr: 'طب الفم والتشخيص', nameEn: 'Oral Medicine', descAr: 'تشخيص أمراض الفم واللسان', descEn: 'Diagnosis of oral and tongue diseases' }
+  { icon: 'FaSyringe', nameAr: 'زراعة الأسنان', nameEn: 'Dental Implants', descAr: 'تعويض الأسنان المفقودة بزرعات ثابتة', descEn: 'Replacement of missing teeth with fixed implants' },
+  { icon: 'FaXRay', nameAr: 'أشعة الفم', nameEn: 'Dental Radiology', descAr: 'تصوير وتحليل الأشعة', descEn: 'Imaging and radiology analysis' },
+  { icon: 'FaHeartbeat', nameAr: 'أمراض اللثة', nameEn: 'Gum Diseases', descAr: 'علاج التهاب اللثة وجراحاتها', descEn: 'Gum inflammation treatment and surgeries' }
 ];
 
-// Diseases data with images
 export const diseases = [
   {
     id: 1,
@@ -216,10 +230,10 @@ export const operations = [
 ];
 
 export const doctorImages = [
+  'https://randomuser.me/api/portraits/men/32.jpg',
   'https://randomuser.me/api/portraits/men/1.jpg',
   'https://randomuser.me/api/portraits/men/2.jpg',
-  'https://randomuser.me/api/portraits/men/3.jpg',
-  'https://randomuser.me/api/portraits/men/4.jpg'
+  'https://randomuser.me/api/portraits/men/3.jpg'
 ];
 
 export const socialLinks = {

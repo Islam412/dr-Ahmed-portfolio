@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
-import { FaHeart, FaGithub, FaCode } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 import { content } from '../data/content';
 
 const Footer = ({ language }) => {
   const t = content[language].footer;
+  const doctorInfo = content[language].doctor;
+  const developerInfo = content[language].developer;
   const isRTL = language === 'ar';
   const currentYear = new Date().getFullYear();
 
@@ -27,11 +29,11 @@ const Footer = ({ language }) => {
               className="flex items-center gap-2 text-gray-400"
             >
               <span>© {currentYear}</span>
-              <span className="text-gradient-rainbow font-semibold">Dr. Ahmed Mosa</span>
+              <span className="text-gradient-rainbow font-semibold">{doctorInfo.name}</span>
               <span>{t.rights}</span>
             </motion.div>
 
-            {/* Heart Line - Designed by Islam Hamdy */}
+            {/* Heart Line - Designed by Developer (مترجم حسب اللغة) */}
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
@@ -41,10 +43,7 @@ const Footer = ({ language }) => {
               <span className="text-gray-400 text-sm">
                 {isRTL ? 'صمم بكل حب بواسطة' : 'Designed with love by'}
               </span>
-              <motion.a
-                href="https://github.com/islam412"
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center gap-2 group"
               >
@@ -55,21 +54,9 @@ const Footer = ({ language }) => {
                   <FaHeart className="text-red-500 text-sm group-hover:text-red-400 transition-colors" />
                 </motion.div>
                 <span className="font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent group-hover:from-purple-500 group-hover:to-pink-500 transition-all">
-                  Islam Hamdy
+                  {developerInfo.name}
                 </span>
-                <FaGithub className="text-gray-400 group-hover:text-white transition-colors text-sm" />
-              </motion.a>
-            </motion.div>
-
-            {/* Tech Stack */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex items-center gap-3 text-gray-500 text-xs"
-            >
-              <FaCode />
-              <span>React + Vite + Tailwind CSS + Framer Motion</span>
+              </motion.div>
             </motion.div>
           </div>
 
