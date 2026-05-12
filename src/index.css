@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #0f172a;
+    --secondary: #1e293b;
+    --accent: #38bdf8;
+    --accent-glow: #0ea5e9;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --card-bg: rgba(30, 41, 59, 0.5);
+    --border: rgba(56, 189, 248, 0.2);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-glow);
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  }
+
+  .animated-border {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animated-border::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+    transition: width 0.3s ease;
+  }
+
+  .animated-border:hover::before {
+    width: 100%;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px var(--accent); }
+  50% { box-shadow: 0 0 30px var(--accent); }
+}
