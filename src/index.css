@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -8,8 +10,6 @@
     --accent-glow: #0ea5e9;
     --text: #f1f5f9;
     --text-muted: #94a3b8;
-    --card-bg: rgba(30, 41, 59, 0.5);
-    --border: rgba(56, 189, 248, 0.2);
   }
 
   * {
@@ -18,71 +18,95 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
     color: var(--text);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    overflow-x: hidden;
-  }
-
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: var(--primary);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-glow);
+    min-height: 100vh;
   }
 }
 
 @layer components {
   .glass-card {
-    background: rgba(30, 41, 59, 0.4);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
-    border-radius: 20px;
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl;
+    transition: all 0.3s ease;
   }
 
-  .glow-text {
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  .glass-card:hover {
+    @apply bg-white/10 border-cyan-500/30 shadow-lg shadow-cyan-500/10;
   }
 
-  .animated-border {
-    position: relative;
-    overflow: hidden;
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-semibold text-white transition-all duration-300;
   }
 
-  .animated-border::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-glow));
-    transition: width 0.3s ease;
+  .btn-primary:hover {
+    @apply shadow-lg shadow-cyan-500/50 scale-105;
   }
 
-  .animated-border:hover::before {
-    width: 100%;
+  .btn-secondary {
+    @apply px-6 py-3 glass-card border-cyan-500/30 rounded-full font-semibold text-cyan-400 transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-cyan-500/20 text-cyan-300;
+  }
+
+  .input-modern {
+    @apply w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition-all duration-300;
+  }
+
+  .input-modern:focus {
+    @apply shadow-lg shadow-cyan-500/20;
   }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.8);
+    }
+  }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 5px var(--accent); }
-  50% { box-shadow: 0 0 30px var(--accent); }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
 }
