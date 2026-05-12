@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaTooth, FaUserMd, FaStethoscope } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTooth, FaUserMd, FaStethoscope, FaHome, FaServicestack, FaImage, FaEnvelope } from 'react-icons/fa';
 import LanguageSwitcher from './LanguageSwitcher';
 import { content } from '../data/content';
 
@@ -15,7 +15,6 @@ const Navbar = ({ language, setLanguage }) => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
       const sections = ['home', 'services', 'diseases', 'gallery', 'about', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
@@ -37,12 +36,12 @@ const Navbar = ({ language, setLanguage }) => {
   }, []);
 
   const navItems = [
-    { id: 'home', name: t.home, icon: <FaTooth /> },
-    { id: 'services', name: t.services, icon: <FaStethoscope /> },
+    { id: 'home', name: t.home, icon: <FaHome /> },
+    { id: 'services', name: t.services, icon: <FaServicestack /> },
     { id: 'diseases', name: t.diseases, icon: <FaUserMd /> },
-    { id: 'gallery', name: t.gallery, icon: <FaUserMd /> },
+    { id: 'gallery', name: t.gallery, icon: <FaImage /> },
     { id: 'about', name: t.about, icon: <FaUserMd /> },
-    { id: 'contact', name: t.contact, icon: <FaUserMd /> }
+    { id: 'contact', name: t.contact, icon: <FaEnvelope /> }
   ];
 
   return (
@@ -59,7 +58,6 @@ const Navbar = ({ language, setLanguage }) => {
         style={{ direction: isRTL ? 'rtl' : 'ltr' }}
       >
         <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-          {/* Logo */}
           <motion.a
             href="#home"
             whileHover={{ scale: 1.05 }}
@@ -77,7 +75,6 @@ const Navbar = ({ language, setLanguage }) => {
             </div>
           </motion.a>
 
-          {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <motion.a
@@ -105,11 +102,9 @@ const Navbar = ({ language, setLanguage }) => {
             ))}
           </div>
 
-          {/* Right Section */}
           <div className="flex items-center gap-3">
             <LanguageSwitcher language={language} setLanguage={setLanguage} />
             
-            {/* Mobile Menu Button */}
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
@@ -121,7 +116,6 @@ const Navbar = ({ language, setLanguage }) => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
