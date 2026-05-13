@@ -360,7 +360,6 @@ export const doctorImages = [
 // Social links
 export const socialLinks = {
   facebook: 'https://www.facebook.com/share/1CwzYY87RU/?mibextid=wwXIfr',
-  instagram: 'https://www.instagram.com/dr.hatem.abdelkafy?igsh=bTU3dG9vbXI5YmVl',
   tiktok: 'https://www.tiktok.com/@drahmedmousa1',
   whatsapp: 'https://wa.me/201050506046'
 };

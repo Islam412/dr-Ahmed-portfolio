@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaSmile, FaTooth, FaUserMd, FaCertificate, FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
+import { FaSmile, FaTooth, FaUserMd, FaCertificate, FaWhatsapp, FaFacebook, FaTiktok } from 'react-icons/fa';
 import { content, doctorImages, socialLinks } from '../data/content';
 
 const About = ({ language }) => {
@@ -15,7 +15,7 @@ const About = ({ language }) => {
 
   const socialIcons = [
     { icon: FaFacebook, link: socialLinks.facebook, color: 'hover:text-blue-500' },
-    { icon: FaInstagram, link: socialLinks.instagram, color: 'hover:text-pink-500' },
+    { icon: FaWhatsapp, link: socialLinks.whatsapp, color: 'hover:text-pink-500' },
     { icon: FaTiktok, link: socialLinks.tiktok, color: 'hover:text-gray-500' }
   ];
 
