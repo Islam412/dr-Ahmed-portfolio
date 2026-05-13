@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FaWhatsapp, FaPhone, FaClock, FaEnvelope, FaMapMarkerAlt, 
   FaCheckCircle, FaExclamationCircle, FaSpinner, FaFacebook, 
-  FaInstagram, FaTiktok, FaUser,
+  FaTiktok, FaUser,
   FaCalendarCheck, FaTooth
 } from 'react-icons/fa';
 import { content, phoneNumber, socialLinks } from '../data/content';
@@ -455,11 +455,11 @@ const Contact = ({ language }) => {
                 </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.1, y: -3 }}
-                  href={socialLinks.instagram}
+                  href={socialLinks.whatsapp}
                   target="_blank"
                   className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-gray-400 hover:text-pink-500 transition-all"
                 >
-                  <FaInstagram />
+                  <FaWhatsapp />
                 </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.1, y: -3 }}
