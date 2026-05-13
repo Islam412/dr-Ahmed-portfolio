@@ -203,7 +203,7 @@ const Hero = ({ language }) => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur-2xl animate-pulse-glow"></div>
                 <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  src="/photo.png"
                   alt="Dr. Ahmed Mosa"
                   className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover border-4 border-gradient-rainbow shadow-2xl relative z-10"
                 />
