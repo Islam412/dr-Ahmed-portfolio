@@ -31,7 +31,7 @@ export const content = {
       subtitle: 'أقدم أحدث التقنيات في طب الأسنان'
     },
     diseases: {
-      title: 'الأمراض التي أعالجها',
+      title: 'الأمراض التي أعالجها بعض',
       subtitle: 'تشخيص دقيق وعلاج متطور لمشاكل الفم والأسنان'
     },
     gallery: {
@@ -155,7 +155,7 @@ export const content = {
       subtitle: 'I offer the latest technologies in dentistry'
     },
     diseases: {
-      title: 'Diseases I Treat',
+      title: 'Some Diseases I Treat',
       subtitle: 'Accurate diagnosis and advanced treatment for oral and dental problems'
     },
     gallery: {
