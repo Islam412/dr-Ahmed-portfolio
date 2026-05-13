@@ -322,29 +322,29 @@ export const operations = [
     id: 1,
     nameAr: 'زراعة أسنان كاملة',
     nameEn: 'Full Mouth Implants',
-    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
-    afterImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600'
+    beforeImage: '/قبل التركيب.jpg',
+    afterImage: '/بعد التركيب.jpg'
   },
   {
     id: 2,
     nameAr: 'ابتسامة هوليود',
     nameEn: 'Hollywood Smile',
-    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
-    afterImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600'
+    beforeImage: '/قبل ابتسامة.png',
+    afterImage: '/بعد الابتسامة.png'
   },
   {
     id: 3,
     nameAr: 'تقويم الأسنان',
     nameEn: 'Orthodontic Treatment',
-    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
-    afterImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600'
+    beforeImage: '/قبل التقويم.jpg',
+    afterImage: '/بعد التقويم.jpg'
   },
   {
     id: 4,
     nameAr: 'فينير تجميلي',
     nameEn: 'Cosmetic Veneers',
-    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
-    afterImage: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600'
+    beforeImage: '/public/قبل فينير.png',
+    afterImage: '/بعد فينير.png'
   }
 ];
 
