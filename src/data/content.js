@@ -351,17 +351,17 @@ export const operations = [
 
 // Doctor images
 export const doctorImages = [
-  'https://randomuser.me/api/portraits/men/32.jpg',
-  'https://randomuser.me/api/portraits/men/1.jpg',
-  'https://randomuser.me/api/portraits/men/2.jpg',
-  'https://randomuser.me/api/portraits/men/3.jpg'
+  '/photo1.jpeg',
+  'photo2.jpeg',
+  'photo3.png',
+  'photo4.png'
 ];
 
 // Social links
 export const socialLinks = {
-  facebook: 'https://www.facebook.com/share/18kkYqig5N/?mibextid=wwXIfr',
+  facebook: 'https://www.facebook.com/share/1CwzYY87RU/?mibextid=wwXIfr',
   instagram: 'https://www.instagram.com/dr.hatem.abdelkafy?igsh=bTU3dG9vbXI5YmVl',
-  tiktok: 'https://www.tiktok.com/@hatemabdelkafy?_r=1&_t=ZS-960XRbIyltc',
+  tiktok: 'https://www.tiktok.com/@drahmedmousa1',
   whatsapp: 'https://wa.me/201050506046'
 };
 
