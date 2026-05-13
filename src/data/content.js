@@ -270,7 +270,7 @@ export const diseases = [
     nameEn: 'Tooth Decay',
     descAr: 'تلف في طبقة مينا الأسنان بسبب البكتيريا',
     descEn: 'Damage to tooth enamel caused by bacteria',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
+    image: '/تسوس.png',
     symptomsAr: 'ألم، حساسية، ثقوب ظاهرة',
     symptomsEn: 'Pain, sensitivity, visible holes'
   },
@@ -280,7 +280,7 @@ export const diseases = [
     nameEn: 'Gingivitis',
     descAr: 'التهاب وتورم في اللثة بسبب تراكم البلاك',
     descEn: 'Inflammation and swelling of gums due to plaque buildup',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
+    image: '/التهابات.png',
     symptomsAr: 'نزيف، احمرار، رائحة فم كريهة',
     symptomsEn: 'Bleeding, redness, bad breath'
   },
@@ -290,7 +290,7 @@ export const diseases = [
     nameEn: 'Dental Abscess',
     descAr: 'تقيح حول جذر السن بسبب العدوى البكتيرية',
     descEn: 'Pus formation around tooth root due to bacterial infection',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
+    image: '/خراج.png',
     symptomsAr: 'ألم شديد، تورم، حمى',
     symptomsEn: 'Severe pain, swelling, fever'
   },
@@ -300,7 +300,7 @@ export const diseases = [
     nameEn: 'Tooth Sensitivity',
     descAr: 'ألم عند تناول مواد ساخنة أو باردة',
     descEn: 'Pain when consuming hot or cold substances',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
+    image: '/حساسية.png',
     symptomsAr: 'ألم مفاجئ، انزعاج من المؤثرات',
     symptomsEn: 'Sudden pain, discomfort from stimuli'
   },
@@ -310,7 +310,7 @@ export const diseases = [
     nameEn: 'Teeth Staining',
     descAr: 'تغير لون الأسنان بسبب الأطعمة أو التدخين',
     descEn: 'Tooth discoloration due to food or smoking',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600',
+    image: '/تصبغات.png',
     symptomsAr: 'اصفرار، بقع بنية',
     symptomsEn: 'Yellowing, brown spots'
   }
