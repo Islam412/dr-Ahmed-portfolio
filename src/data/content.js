@@ -314,6 +314,7 @@ export const diseases = [
     symptomsAr: 'اصفرار، بقع بنية',
     symptomsEn: 'Yellowing, brown spots'
   }
+  
 ];
 
 // Operations data
@@ -343,7 +344,7 @@ export const operations = [
     id: 4,
     nameAr: 'فينير تجميلي',
     nameEn: 'Cosmetic Veneers',
-    beforeImage: '/public/قبل فينير.png',
+    beforeImage: '/قبل فينير.png',
     afterImage: '/بعد فينير.png'
   }
 ];
