@@ -1,16 +1,80 @@
-# React + Vite
+md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# د. أحمد موسى - استشاري طب وتجميل الأسنان (Portfolio)
 
-Currently, two official plugins are available:
+A modern and responsive portfolio website for **Dr. Ahmed Mosa**.
+This project is built using **React + Vite** and styled with **Tailwind CSS**, designed to look professional and attractive on both mobile and desktop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Live Server:** https://dr-ahmed-mosa.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Overview
+
+This website provides a clean front-end experience to showcase the doctor’s information and services, with a modern UI/UX approach and fast loading performance (using Vite).
+
+---
+
+## Tech Stack
+
+- **React** (UI library)
+- **Vite** (Build tool / dev server)
+- **Tailwind CSS** (Styling)
+- **PostCSS** (CSS processing)
+- **JavaScript** (Project language)
+- **ESLint** (Linting)
+
+---
+
+## Features (Main)
+
+- Responsive layout (mobile-first)
+- Modern design system using Tailwind
+- Fast development workflow with Vite
+- Clean and maintainable component structure
+
+---
+
+## Screenshots
+
+### Demo AR
+  - ![Demo AR](/ar.png)
+
+### Demo EN
+  - ![Demo EN](/en.png)
+
+### Project Video Demo
+  - [▶️ Watch Project Video](/video.mp4)
+---
+
+## Getting Started
+
+### 1) Install dependencies
+```bash
+npm install
+
+2) Run in development mode
+bash
+
+npm run dev
+
+3) Build for production
+bash
+
+npm run build
+
+4) Preview production build
+bash
+
+npm run preview
+
+Folder Structure (Typical)
+
+    src/ - React source code (components, pages, styles)
+    index.html - Main entry HTML
+    vite.config.js - Vite configuration
+    tailwind.config.js - Tailwind configuration
