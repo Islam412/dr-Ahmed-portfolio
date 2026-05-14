@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Diseases from './components/Diseases';
 import Gallery from './components/Gallery';
-import Clinics from './components/Clinics';
+// import Clinics from './components/Clinics';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -28,7 +28,7 @@ function App() {
         <Services language={language} />
         <Diseases language={language} />
         <Gallery language={language} />
-        <Clinics language={language} />
+        {/* <Clinics language={language} /> */}
         <About language={language} />
         <Contact language={language} />
         <Footer language={language} />
